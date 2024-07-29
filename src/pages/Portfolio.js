@@ -24,26 +24,23 @@ const Portfolio = () => {
       transition={transition1}
       className='section'>
       <div className='container mx-auto h-full relative'>
-        <div className='flex flex-col lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8'>
+        <div className='xl:flex xl:flex-row h-full xl:pt-[150px] xl:items-center xl:justify-center gap-x-24 text-center lg:text-left lg:pt-16 overflow-scroll xl:overflow-hidden'>
           {/* text */}
           <motion.div
             initial={{ opacity: 0, y: '-80%' }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: '-80%' }}
             transition={transition1}
-            className='flex flex-col lg:items-start'>
+            className='flex-1 xl:pl-[100px] pt-36 pb-14 xl:pt-0 xl:w-auto z-10 flex flex-col justify-center items-center xl:items-start'>
             <h1 className='h1'>Portfolio</h1>
-            <p className='mb-12 max-w-sm'>
-              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              pellentesque nunc non elementum scelerisque. Donec id ligula
-              lacinia, ultricies dui eu, dapibus ligula. Sed ut odio nec purus
-              tincidunt vestibulum. Sed nec odio in odio posuere ultrices. Sed
+            <p className='mb-12 max-w-lg mx-2 lg:text-xl xl:text-base'>
+              Hello! I'm Sambit Sarkar, a passionate photographer. I specialize in capturing the beauty of wildlife, especially birds and animals, as well as the serene landscapes of nature. I also enjoy freezing special moments in daily life, from the excitement of sports events to the energy of concerts and cultural festivals.
               <br />
               <br />
-              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              pellentesque nunc non elementum scelerisque. Donec id ligula
-              lacinia, ultricies dui eu, dapibus ligula. Sed ut odio nec purus
-              tincidunt vestibulum. Sed nec odio in odio posuere ultrices. Sed
+              For the past two years, I've been part of my college's Coverage team, leading the group for the past year. Together, we've documented a variety of vibrant events, showcasing my diverse photography skills.
+              <br />
+              <br />
+              Explore my portfolio and experience the world through my lens.
             </p>
             <Link to={'/contact'} className='btn mb-[30px]'>Contact me!</Link>
           </motion.div>

@@ -5,7 +5,7 @@ import { IoMdClose } from 'react-icons/io';
 import { CgMenuRight } from 'react-icons/cg';
 
 //import Link
-import { Link } from 'react-router-dom';
+import { Link , useLocation } from 'react-router-dom';
 
 //import motion
 import { motion } from 'framer-motion';
@@ -25,6 +25,8 @@ const menuVariants = {
 
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  let location = useLocation();
+  const color = location.pathname === '/' ? 'bg-transparent' : 'bg-blue-100';
   return (
     <nav className='text-primary xl:hidden'>
     {/* nav open button */}

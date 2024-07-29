@@ -6,11 +6,14 @@ import Logo from '../img/header/logo.png';
 import MobileNav from './MobileNav';
 
 //import Link
-import { Link } from 'react-router-dom';
+import { Link ,useLocation } from 'react-router-dom';
 
 const Header = () => {
+  let location = useLocation();
+  const color = location.pathname === '/' ? 'bg-transparent' : 'bg-blue-100';
+  // console.log(location.pathname);
   return (
-    <header className='fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center'>
+    <header className='fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center {color}'>
       <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between'>
         {/* Logo */}
         <Link to={'/'} className='max-w-[200px]'>

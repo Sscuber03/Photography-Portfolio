@@ -1,7 +1,6 @@
 import React from 'react';
 
 //import images
-// import WomanImg from '../img/home/woman.png';
 import TestImg from '../img/home/test2.jpg';
 
 //import Link
