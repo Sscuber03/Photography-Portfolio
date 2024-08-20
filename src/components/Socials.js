@@ -8,7 +8,7 @@ import {
 } from 'react-icons/im';
 
 const Socials = () => {
-  return <div className='hidden xl:flex ml-24'>
+  return <div className='hidden xl:flex ml-24 my-auto'>
     <ul className='flex gap-x-4'>
       <li><a href='https://www.instagram.com/ss_cuber2/' target='_blank' rel='noreferrer'><ImInstagram /></a></li>
       <li><a href='https://www.facebook.com/sambit.sarkar2003/' target='_blank' rel='noreferrer'><ImFacebook /></a></li>

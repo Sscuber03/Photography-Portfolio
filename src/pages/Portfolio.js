@@ -24,7 +24,7 @@ const Portfolio = () => {
       transition={transition1}
       className='section'>
       <div className='container mx-auto h-full relative'>
-        <div className='xl:flex xl:flex-row h-full xl:pt-[150px] xl:items-center xl:justify-center gap-x-24 text-center lg:text-left lg:pt-16 overflow-scroll xl:overflow-hidden'>
+        <div className='xl:flex xl:flex-row h-full xl:pt-[150px] xl:items-center xl:justify-center gap-x-24 text-center lg:text-left lg:pt-16 overflow-scroll scrollbar-hide'>
           {/* text */}
           <motion.div
             initial={{ opacity: 0, y: '-80%' }}
@@ -45,7 +45,7 @@ const Portfolio = () => {
             <Link to={'/contact'} className='btn mb-[30px]'>Contact me!</Link>
           </motion.div>
           {/* image grid */}
-          <div className='grid grid-cols-2 gap-2'>
+          <div className='grid grid-cols-2 gap-2 place-items-center xl:mr-5'>
             {/* image */}
             <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
               <img className='object-cover h-full lg:h=[220px] hover:scale-110 transition-all duration-500' src={Image1} alt='' />

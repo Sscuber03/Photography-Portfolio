@@ -28,7 +28,7 @@ const MobileNav = () => {
   let location = useLocation();
   const color = location.pathname === '/' ? 'bg-transparent' : 'bg-blue-100';
   return (
-    <nav className='text-primary xl:hidden'>
+    <nav className='text-primary xl:hidden my-auto'>
     {/* nav open button */}
       <div onClick={() => setOpenMenu(true)} className='text-3xl cursor-pointer'>
         <CgMenuRight />

@@ -1,7 +1,7 @@
 import React from 'react';
 
 //import images
-import TestImg from '../img/about/image.png';
+import TestImg from '../img/about/image.JPG';
 
 //import Link
 import { Link } from 'react-router-dom';
@@ -22,14 +22,14 @@ const About = () => {
       className='section bg-blue-100'>
       <div className='container mx-auto h-full relative'>
         {/* text and img wrapper */}
-        <div className='xl:flex xl:flex-row h-full xl:pt-[150px] xl:items-center xl:justify-center gap-x-24 text-center lg:text-left lg:pt-16 overflow-scroll xl:overflow-hidden'>
+        <div className='xl:flex xl:flex-row h-full xl:pt-[150px] xl:items-center xl:justify-center gap-x-24 text-center lg:text-left lg:pt-16 overflow-scroll scrollbar-hide xl:overflow-hidden'>
           {/* text */}
           <motion.div
             initial={{ opacity: 0, y: '-80%' }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: '-80%' }}
             transition={transition1}
-            className='flex-1 xl:pl-[100px] pt-36 pb-14 xl:pt-0 xl:w-auto z-10 flex flex-col justify-center items-center xl:items-start'>
+            className='flex-1 xl:pl-[100px] pt-36 pb-14 xl:pt-0 xl:w-auto flex flex-col justify-center items-center xl:items-start'>
             <h1 className='h1'>About Me</h1>
             <p className='mb-12 max-w-lg mx-2 lg:text-xl xl:text-base'>
             Hello! My name is Sambit Sarkar, a final year Computer Science student at RCC Institute of Information Technology. I have a deep passion for coding and a hobby in photography.
@@ -43,11 +43,11 @@ const About = () => {
               <br />
               I invite you to explore my portfolio and experience the world through my eyes.
             </p>
-            <Link to={'/portfolio'} className='btn'>View my Works</Link>
+            <Link to={'/portfolio'} className='btn mb-6'>View my Works</Link>
           </motion.div>
           {/* image */}
-          <div className='flex-1 max-h-96 lg:max-h-max order-2 lg:order-none flex justify-center items-center'>
-            <img src={TestImg} alt='' />
+          <div className='flex-1 max-h-64 order-2 lg:max-w-[75%] lg:mx-auto xl:flex xl:items-center xl:max-w-[80%] xl:mx-auto xl:ml-[5%]'>
+            <img src={TestImg} alt='' className='rounded-2xl border-blue-300 border-8 xl:max-w-[90%]'/>
           </div>
         </div>
       </div>

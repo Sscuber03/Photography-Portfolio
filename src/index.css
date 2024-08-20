@@ -15,4 +15,14 @@
   .btn {
     @apply py-[9px] px-[25px] h-[33px] md:py-[18px] md:px-[50px] md:h-[66px] flex items-center justify-center text-xs md:text-base uppercase font-secondary font-semibold bg-primary text-white;
   }
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
